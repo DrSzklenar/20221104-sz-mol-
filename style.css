@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin: 20px;
+}
+
+input{
+    border: none;
+    min-width: 100%;
+    height: 50px;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    background-color: #c0c0c0;
+    padding: 4px;
+}
+
+
+#gombok{
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr) / repeat(4, 1fr);
+    grid-template-areas: 
+    "backspace backspace backspace plus"
+    "gomb1 gomb2 gomb3 minus"
+    "gomb4 gomb5 gomb6 multiply"
+    "gomb7 gomb8 gomb9 divide"
+    "pont gomb0 cl equate"
+    
+    ;
+    gap: 2px;
+    
+}
+
+
+
+.gomb{
+    display: grid;
+    place-items: center;
+    width: 80px;
+    box-sizing: border-box;
+    font-size: 50px ;
+    background-color: #f3f3f3;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+.gomb:hover{
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+#backspace{
+    grid-area: backspace;
+    width: 248px;
+}
+
+#equate{
+    grid-area: equate;
+}
+
+#input{
+    grid-area: input;
+}
+
+
+#plus{
+    grid-area: plus;
+}
+
+#minus{
+    grid-area: minus;
+}
+
+
+#multiply{
+    grid-area: multipli;
+}
+
+#divide{
+    grid-area: divide;
+}
+
+#cl{
+    grid-area: cl;
+}
+
+#pont{
+    grid-area: pont;
+}
+
+#gomb0{
+    grid-area: gomb0;
+}
+
+#gomb1{
+    grid-area: gomb1;
+}
+#gomb2{
+    grid-area: gomb2;
+}
+#gomb3{
+    grid-area: gomb3;
+}
+#gomb4{
+    grid-area: gomb4;
+}
+#gomb5{
+    grid-area: gomb5;
+}
+#gomb6{
+    grid-area: gomb6;
+}
+#gomb7{
+    grid-area: gomb7;
+}
+#gomb8{
+    grid-area: gomb8;
+}
+#gomb9{
+    grid-area: gomb9;
+}

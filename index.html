@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="" id="input" value="">
+        <div id="gombok">
+            <div onclick="backspace()" id ="backspace" class="gomb"><span class="material-symbols-outlined">backspace</span></div>
+            <div onclick="number(this.innerText)" id="gomb1" class="gomb">1</div>
+            <div onclick="number(this.innerText)" id="gomb2" class="gomb">2</div>
+            <div onclick="number(this.innerText)" id="gomb3" class="gomb">3</div>
+            <div onclick="number(this.innerText)" id="gomb4" class="gomb">4</div>
+            <div onclick="number(this.innerText)" id="gomb5" class="gomb">5</div>
+            <div onclick="number(this.innerText)" id="gomb6" class="gomb">6</div>
+            <div onclick="number(this.innerText)" id="gomb7" class="gomb">7</div>
+            <div onclick="number(this.innerText)" id="gomb8" class="gomb">8</div>
+            <div onclick="number(this.innerText)" id="gomb9" class="gomb">9</div>
+            <div onclick="number(this.innerText)" id="gomb0" class="gomb">0</div>
+            <div onclick="equate()" id="equate" class="gomb">=</div>
+            <div onclick="tizedes()" id="pont"class="gomb">,</div>
+            <div onclick="torles()" id="cl" class="gomb">Cl</div>
+            <div onclick="addOperator(this.innerText)" id="plus" class="gomb">+</div>
+            <div onclick="addOperator(this.innerText)" id="minus" class="gomb">-</div>
+            <div onclick="addOperator('*')" id="multipli" class="gomb">x</div>
+            <div onclick="addOperator('/')" id="divide" class="gomb">÷</div>
+        </div>
+    </div>
+</body>
+</html>
